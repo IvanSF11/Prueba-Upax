@@ -1,0 +1,796 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6309FCC52156317A478C4B5E /* Pods_Prueba_Upax.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4946BE7195C2D0C437CD4F8 /* Pods_Prueba_Upax.framework */; };
+		8C77BA6B2846AD1E00004AFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C77BA6A2846AD1E00004AFF /* AppDelegate.swift */; };
+		8C77BA6D2846AD1E00004AFF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C77BA6C2846AD1E00004AFF /* SceneDelegate.swift */; };
+		8C77BA722846AD1F00004AFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C77BA702846AD1F00004AFF /* Main.storyboard */; };
+		8C77BA742846AD2100004AFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C77BA732846AD2100004AFF /* Assets.xcassets */; };
+		8C77BA772846AD2100004AFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C77BA752846AD2100004AFF /* LaunchScreen.storyboard */; };
+		8C77BA822846AD2100004AFF /* Prueba_UpaxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C77BA812846AD2100004AFF /* Prueba_UpaxTests.swift */; };
+		8C77BA8D2846AD2100004AFF /* Prueba_UpaxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C77BA8C2846AD2100004AFF /* Prueba_UpaxUITests.swift */; };
+		8C77BAC92846B05500004AFF /* MainTablePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C77BAC32846B05500004AFF /* MainTablePresenter.swift */; };
+		8C77BACA2846B05500004AFF /* MainTableRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C77BAC42846B05500004AFF /* MainTableRouter.swift */; };
+		8C77BACB2846B05500004AFF /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C77BAC52846B05500004AFF /* MainTableViewController.swift */; };
+		8C77BACC2846B05500004AFF /* MainTableProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C77BAC62846B05500004AFF /* MainTableProtocols.swift */; };
+		8C77BACD2846B05500004AFF /* MainTableInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C77BAC72846B05500004AFF /* MainTableInteractor.swift */; };
+		8C77BADC2846B2E900004AFF /* GenericTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C77BADB2846B2E900004AFF /* GenericTableViewCell.swift */; };
+		8C77BAE42846B4E600004AFF /* MainTableEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C77BAE32846B4E600004AFF /* MainTableEntity.swift */; };
+		8C77BAF02846D08C00004AFF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8C77BAEF2846D08C00004AFF /* GoogleService-Info.plist */; };
+		8C77BAF62846D35A00004AFF /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C77BAF52846D35A00004AFF /* FirebaseService.swift */; };
+		8C77BAFC2846D43C00004AFF /* UIColor+HexExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C77BAFB2846D43C00004AFF /* UIColor+HexExtension.swift */; };
+		8C77BB042846D5E800004AFF /* DebugLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C77BB032846D5E800004AFF /* DebugLog.swift */; };
+		8C77BB1F2846E40100004AFF /* ChartsTableViewControllerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C77BB192846E40100004AFF /* ChartsTableViewControllerPresenter.swift */; };
+		8C77BB202846E40100004AFF /* ChartsTableViewControllerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C77BB1A2846E40100004AFF /* ChartsTableViewControllerRouter.swift */; };
+		8C77BB212846E40100004AFF /* ChartsTableViewControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C77BB1B2846E40100004AFF /* ChartsTableViewControllerViewController.swift */; };
+		8C77BB222846E40100004AFF /* ChartsTableViewControllerProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C77BB1C2846E40100004AFF /* ChartsTableViewControllerProtocols.swift */; };
+		8C77BB232846E40100004AFF /* ChartsTableViewControllerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C77BB1D2846E40100004AFF /* ChartsTableViewControllerInteractor.swift */; };
+		8C77BB2C2846F2AB00004AFF /* ChartsTableEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C77BB2B2846F2AB00004AFF /* ChartsTableEntity.swift */; };
+		8C77BB3B2846F74000004AFF /* ChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C77BB3A2846F74000004AFF /* ChartCell.swift */; };
+		8C77BB402846F7DA00004AFF /* PercentageValueFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C77BB3F2846F7DA00004AFF /* PercentageValueFormatter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8C77BA7E2846AD2100004AFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C77BA5F2846AD1E00004AFF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C77BA662846AD1E00004AFF;
+			remoteInfo = "Prueba Upax";
+		};
+		8C77BA892846AD2100004AFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C77BA5F2846AD1E00004AFF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C77BA662846AD1E00004AFF;
+			remoteInfo = "Prueba Upax";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		36D85496A798EFFF0B630590 /* Pods-Prueba Upax.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prueba Upax.release.xcconfig"; path = "Target Support Files/Pods-Prueba Upax/Pods-Prueba Upax.release.xcconfig"; sourceTree = "<group>"; };
+		8C77BA672846AD1E00004AFF /* Prueba Upax.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Prueba Upax.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C77BA6A2846AD1E00004AFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8C77BA6C2846AD1E00004AFF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8C77BA712846AD1F00004AFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8C77BA732846AD2100004AFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8C77BA762846AD2100004AFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8C77BA782846AD2100004AFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C77BA7D2846AD2100004AFF /* Prueba UpaxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Prueba UpaxTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C77BA812846AD2100004AFF /* Prueba_UpaxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prueba_UpaxTests.swift; sourceTree = "<group>"; };
+		8C77BA832846AD2100004AFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C77BA882846AD2100004AFF /* Prueba UpaxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Prueba UpaxUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C77BA8C2846AD2100004AFF /* Prueba_UpaxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prueba_UpaxUITests.swift; sourceTree = "<group>"; };
+		8C77BA8E2846AD2100004AFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C77BAC32846B05500004AFF /* MainTablePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTablePresenter.swift; sourceTree = "<group>"; };
+		8C77BAC42846B05500004AFF /* MainTableRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableRouter.swift; sourceTree = "<group>"; };
+		8C77BAC52846B05500004AFF /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		8C77BAC62846B05500004AFF /* MainTableProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableProtocols.swift; sourceTree = "<group>"; };
+		8C77BAC72846B05500004AFF /* MainTableInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableInteractor.swift; sourceTree = "<group>"; };
+		8C77BADB2846B2E900004AFF /* GenericTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableViewCell.swift; sourceTree = "<group>"; };
+		8C77BAE32846B4E600004AFF /* MainTableEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableEntity.swift; sourceTree = "<group>"; };
+		8C77BAEF2846D08C00004AFF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8C77BAF52846D35A00004AFF /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
+		8C77BAFB2846D43C00004AFF /* UIColor+HexExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+HexExtension.swift"; sourceTree = "<group>"; };
+		8C77BB032846D5E800004AFF /* DebugLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugLog.swift; sourceTree = "<group>"; };
+		8C77BB192846E40100004AFF /* ChartsTableViewControllerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsTableViewControllerPresenter.swift; sourceTree = "<group>"; };
+		8C77BB1A2846E40100004AFF /* ChartsTableViewControllerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsTableViewControllerRouter.swift; sourceTree = "<group>"; };
+		8C77BB1B2846E40100004AFF /* ChartsTableViewControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsTableViewControllerViewController.swift; sourceTree = "<group>"; };
+		8C77BB1C2846E40100004AFF /* ChartsTableViewControllerProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsTableViewControllerProtocols.swift; sourceTree = "<group>"; };
+		8C77BB1D2846E40100004AFF /* ChartsTableViewControllerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsTableViewControllerInteractor.swift; sourceTree = "<group>"; };
+		8C77BB2B2846F2AB00004AFF /* ChartsTableEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsTableEntity.swift; sourceTree = "<group>"; };
+		8C77BB3A2846F74000004AFF /* ChartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartCell.swift; sourceTree = "<group>"; };
+		8C77BB3F2846F7DA00004AFF /* PercentageValueFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentageValueFormatter.swift; sourceTree = "<group>"; };
+		D1CDD4F6B495C9D7F68789A8 /* Pods-Prueba Upax.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prueba Upax.debug.xcconfig"; path = "Target Support Files/Pods-Prueba Upax/Pods-Prueba Upax.debug.xcconfig"; sourceTree = "<group>"; };
+		E4946BE7195C2D0C437CD4F8 /* Pods_Prueba_Upax.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Prueba_Upax.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8C77BA642846AD1E00004AFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6309FCC52156317A478C4B5E /* Pods_Prueba_Upax.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C77BA7A2846AD2100004AFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C77BA852846AD2100004AFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8C77BA5E2846AD1E00004AFF = {
+			isa = PBXGroup;
+			children = (
+				8C77BA692846AD1E00004AFF /* Prueba Upax */,
+				8C77BA802846AD2100004AFF /* Prueba UpaxTests */,
+				8C77BA8B2846AD2100004AFF /* Prueba UpaxUITests */,
+				8C77BA682846AD1E00004AFF /* Products */,
+				D1D7B5A6AAD2C4A7BD3A11C3 /* Pods */,
+				E2D3B109112B6030A6EF5110 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8C77BA682846AD1E00004AFF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C77BA672846AD1E00004AFF /* Prueba Upax.app */,
+				8C77BA7D2846AD2100004AFF /* Prueba UpaxTests.xctest */,
+				8C77BA882846AD2100004AFF /* Prueba UpaxUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8C77BA692846AD1E00004AFF /* Prueba Upax */ = {
+			isa = PBXGroup;
+			children = (
+				8C77BAF42846D34500004AFF /* Firebase */,
+				8C77BAD52846B07800004AFF /*  Lifecycle */,
+				8C77BABC2846AFEA00004AFF /* Home */,
+				8C77BB182846E3CC00004AFF /* Charts */,
+				8C77BB362846F71500004AFF /* Cells */,
+				8C77BAD62846B11700004AFF /* Resources */,
+				8C77BAFA2846D41A00004AFF /* Extensions */,
+				8C77BA782846AD2100004AFF /* Info.plist */,
+				8C77BAEF2846D08C00004AFF /* GoogleService-Info.plist */,
+				8C77BA702846AD1F00004AFF /* Main.storyboard */,
+				8C77BA752846AD2100004AFF /* LaunchScreen.storyboard */,
+			);
+			path = "Prueba Upax";
+			sourceTree = "<group>";
+		};
+		8C77BA802846AD2100004AFF /* Prueba UpaxTests */ = {
+			isa = PBXGroup;
+			children = (
+				8C77BA812846AD2100004AFF /* Prueba_UpaxTests.swift */,
+				8C77BA832846AD2100004AFF /* Info.plist */,
+			);
+			path = "Prueba UpaxTests";
+			sourceTree = "<group>";
+		};
+		8C77BA8B2846AD2100004AFF /* Prueba UpaxUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8C77BA8C2846AD2100004AFF /* Prueba_UpaxUITests.swift */,
+				8C77BA8E2846AD2100004AFF /* Info.plist */,
+			);
+			path = "Prueba UpaxUITests";
+			sourceTree = "<group>";
+		};
+		8C77BABC2846AFEA00004AFF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8C77BAC52846B05500004AFF /* MainTableViewController.swift */,
+				8C77BAC72846B05500004AFF /* MainTableInteractor.swift */,
+				8C77BAC32846B05500004AFF /* MainTablePresenter.swift */,
+				8C77BAE32846B4E600004AFF /* MainTableEntity.swift */,
+				8C77BAC42846B05500004AFF /* MainTableRouter.swift */,
+				8C77BAC62846B05500004AFF /* MainTableProtocols.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		8C77BAD52846B07800004AFF /*  Lifecycle */ = {
+			isa = PBXGroup;
+			children = (
+				8C77BA6A2846AD1E00004AFF /* AppDelegate.swift */,
+				8C77BA6C2846AD1E00004AFF /* SceneDelegate.swift */,
+			);
+			path = " Lifecycle";
+			sourceTree = "<group>";
+		};
+		8C77BAD62846B11700004AFF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8C77BA732846AD2100004AFF /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8C77BAF42846D34500004AFF /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				8C77BAF52846D35A00004AFF /* FirebaseService.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		8C77BAFA2846D41A00004AFF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8C77BAFB2846D43C00004AFF /* UIColor+HexExtension.swift */,
+				8C77BB032846D5E800004AFF /* DebugLog.swift */,
+				8C77BB3F2846F7DA00004AFF /* PercentageValueFormatter.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8C77BB182846E3CC00004AFF /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				8C77BB1B2846E40100004AFF /* ChartsTableViewControllerViewController.swift */,
+				8C77BB1D2846E40100004AFF /* ChartsTableViewControllerInteractor.swift */,
+				8C77BB192846E40100004AFF /* ChartsTableViewControllerPresenter.swift */,
+				8C77BB2B2846F2AB00004AFF /* ChartsTableEntity.swift */,
+				8C77BB1A2846E40100004AFF /* ChartsTableViewControllerRouter.swift */,
+				8C77BB1C2846E40100004AFF /* ChartsTableViewControllerProtocols.swift */,
+			);
+			path = Charts;
+			sourceTree = "<group>";
+		};
+		8C77BB362846F71500004AFF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8C77BADB2846B2E900004AFF /* GenericTableViewCell.swift */,
+				8C77BB3A2846F74000004AFF /* ChartCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		D1D7B5A6AAD2C4A7BD3A11C3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D1CDD4F6B495C9D7F68789A8 /* Pods-Prueba Upax.debug.xcconfig */,
+				36D85496A798EFFF0B630590 /* Pods-Prueba Upax.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E2D3B109112B6030A6EF5110 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4946BE7195C2D0C437CD4F8 /* Pods_Prueba_Upax.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8C77BA662846AD1E00004AFF /* Prueba Upax */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C77BA912846AD2100004AFF /* Build configuration list for PBXNativeTarget "Prueba Upax" */;
+			buildPhases = (
+				7F1D329695E67C4340AE6ED1 /* [CP] Check Pods Manifest.lock */,
+				8C77BA632846AD1E00004AFF /* Sources */,
+				8C77BA642846AD1E00004AFF /* Frameworks */,
+				8C77BA652846AD1E00004AFF /* Resources */,
+				F3963FCC706556A8C90D2E15 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Prueba Upax";
+			productName = "Prueba Upax";
+			productReference = 8C77BA672846AD1E00004AFF /* Prueba Upax.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8C77BA7C2846AD2100004AFF /* Prueba UpaxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C77BA942846AD2100004AFF /* Build configuration list for PBXNativeTarget "Prueba UpaxTests" */;
+			buildPhases = (
+				8C77BA792846AD2100004AFF /* Sources */,
+				8C77BA7A2846AD2100004AFF /* Frameworks */,
+				8C77BA7B2846AD2100004AFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C77BA7F2846AD2100004AFF /* PBXTargetDependency */,
+			);
+			name = "Prueba UpaxTests";
+			productName = "Prueba UpaxTests";
+			productReference = 8C77BA7D2846AD2100004AFF /* Prueba UpaxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8C77BA872846AD2100004AFF /* Prueba UpaxUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C77BA972846AD2100004AFF /* Build configuration list for PBXNativeTarget "Prueba UpaxUITests" */;
+			buildPhases = (
+				8C77BA842846AD2100004AFF /* Sources */,
+				8C77BA852846AD2100004AFF /* Frameworks */,
+				8C77BA862846AD2100004AFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C77BA8A2846AD2100004AFF /* PBXTargetDependency */,
+			);
+			name = "Prueba UpaxUITests";
+			productName = "Prueba UpaxUITests";
+			productReference = 8C77BA882846AD2100004AFF /* Prueba UpaxUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8C77BA5F2846AD1E00004AFF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					8C77BA662846AD1E00004AFF = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					8C77BA7C2846AD2100004AFF = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 8C77BA662846AD1E00004AFF;
+					};
+					8C77BA872846AD2100004AFF = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 8C77BA662846AD1E00004AFF;
+					};
+				};
+			};
+			buildConfigurationList = 8C77BA622846AD1E00004AFF /* Build configuration list for PBXProject "Prueba Upax" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8C77BA5E2846AD1E00004AFF;
+			productRefGroup = 8C77BA682846AD1E00004AFF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8C77BA662846AD1E00004AFF /* Prueba Upax */,
+				8C77BA7C2846AD2100004AFF /* Prueba UpaxTests */,
+				8C77BA872846AD2100004AFF /* Prueba UpaxUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8C77BA652846AD1E00004AFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C77BA772846AD2100004AFF /* LaunchScreen.storyboard in Resources */,
+				8C77BAF02846D08C00004AFF /* GoogleService-Info.plist in Resources */,
+				8C77BA742846AD2100004AFF /* Assets.xcassets in Resources */,
+				8C77BA722846AD1F00004AFF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C77BA7B2846AD2100004AFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C77BA862846AD2100004AFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7F1D329695E67C4340AE6ED1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Prueba Upax-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3963FCC706556A8C90D2E15 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Prueba Upax/Pods-Prueba Upax-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Prueba Upax/Pods-Prueba Upax-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Prueba Upax/Pods-Prueba Upax-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8C77BA632846AD1E00004AFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C77BB202846E40100004AFF /* ChartsTableViewControllerRouter.swift in Sources */,
+				8C77BADC2846B2E900004AFF /* GenericTableViewCell.swift in Sources */,
+				8C77BAC92846B05500004AFF /* MainTablePresenter.swift in Sources */,
+				8C77BB212846E40100004AFF /* ChartsTableViewControllerViewController.swift in Sources */,
+				8C77BAF62846D35A00004AFF /* FirebaseService.swift in Sources */,
+				8C77BB232846E40100004AFF /* ChartsTableViewControllerInteractor.swift in Sources */,
+				8C77BAFC2846D43C00004AFF /* UIColor+HexExtension.swift in Sources */,
+				8C77BAE42846B4E600004AFF /* MainTableEntity.swift in Sources */,
+				8C77BACC2846B05500004AFF /* MainTableProtocols.swift in Sources */,
+				8C77BACA2846B05500004AFF /* MainTableRouter.swift in Sources */,
+				8C77BACD2846B05500004AFF /* MainTableInteractor.swift in Sources */,
+				8C77BA6B2846AD1E00004AFF /* AppDelegate.swift in Sources */,
+				8C77BB042846D5E800004AFF /* DebugLog.swift in Sources */,
+				8C77BB222846E40100004AFF /* ChartsTableViewControllerProtocols.swift in Sources */,
+				8C77BB3B2846F74000004AFF /* ChartCell.swift in Sources */,
+				8C77BB1F2846E40100004AFF /* ChartsTableViewControllerPresenter.swift in Sources */,
+				8C77BB402846F7DA00004AFF /* PercentageValueFormatter.swift in Sources */,
+				8C77BB2C2846F2AB00004AFF /* ChartsTableEntity.swift in Sources */,
+				8C77BACB2846B05500004AFF /* MainTableViewController.swift in Sources */,
+				8C77BA6D2846AD1E00004AFF /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C77BA792846AD2100004AFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C77BA822846AD2100004AFF /* Prueba_UpaxTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C77BA842846AD2100004AFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C77BA8D2846AD2100004AFF /* Prueba_UpaxUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8C77BA7F2846AD2100004AFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C77BA662846AD1E00004AFF /* Prueba Upax */;
+			targetProxy = 8C77BA7E2846AD2100004AFF /* PBXContainerItemProxy */;
+		};
+		8C77BA8A2846AD2100004AFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C77BA662846AD1E00004AFF /* Prueba Upax */;
+			targetProxy = 8C77BA892846AD2100004AFF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8C77BA702846AD1F00004AFF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C77BA712846AD1F00004AFF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8C77BA752846AD2100004AFF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C77BA762846AD2100004AFF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8C77BA8F2846AD2100004AFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8C77BA902846AD2100004AFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8C77BA922846AD2100004AFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1CDD4F6B495C9D7F68789A8 /* Pods-Prueba Upax.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 45AU7KPNYZ;
+				INFOPLIST_FILE = "Prueba Upax/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ivansoriano.Prueba-Upax";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8C77BA932846AD2100004AFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36D85496A798EFFF0B630590 /* Pods-Prueba Upax.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 45AU7KPNYZ;
+				INFOPLIST_FILE = "Prueba Upax/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ivansoriano.Prueba-Upax";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8C77BA952846AD2100004AFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 45AU7KPNYZ;
+				INFOPLIST_FILE = "Prueba UpaxTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ivansoriano.Prueba-UpaxTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Prueba Upax.app/Prueba Upax";
+			};
+			name = Debug;
+		};
+		8C77BA962846AD2100004AFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 45AU7KPNYZ;
+				INFOPLIST_FILE = "Prueba UpaxTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ivansoriano.Prueba-UpaxTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Prueba Upax.app/Prueba Upax";
+			};
+			name = Release;
+		};
+		8C77BA982846AD2100004AFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 45AU7KPNYZ;
+				INFOPLIST_FILE = "Prueba UpaxUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ivansoriano.Prueba-UpaxUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Prueba Upax";
+			};
+			name = Debug;
+		};
+		8C77BA992846AD2100004AFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 45AU7KPNYZ;
+				INFOPLIST_FILE = "Prueba UpaxUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ivansoriano.Prueba-UpaxUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Prueba Upax";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8C77BA622846AD1E00004AFF /* Build configuration list for PBXProject "Prueba Upax" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C77BA8F2846AD2100004AFF /* Debug */,
+				8C77BA902846AD2100004AFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C77BA912846AD2100004AFF /* Build configuration list for PBXNativeTarget "Prueba Upax" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C77BA922846AD2100004AFF /* Debug */,
+				8C77BA932846AD2100004AFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C77BA942846AD2100004AFF /* Build configuration list for PBXNativeTarget "Prueba UpaxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C77BA952846AD2100004AFF /* Debug */,
+				8C77BA962846AD2100004AFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C77BA972846AD2100004AFF /* Build configuration list for PBXNativeTarget "Prueba UpaxUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C77BA982846AD2100004AFF /* Debug */,
+				8C77BA992846AD2100004AFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8C77BA5F2846AD1E00004AFF /* Project object */;
+}

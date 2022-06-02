@@ -1,0 +1,6 @@
+framework module Pods_Prueba_Upax {
+  umbrella header "Pods-Prueba Upax-umbrella.h"
+
+  export *
+  module * { export * }
+}
