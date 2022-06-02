@@ -62,6 +62,23 @@ class MainTableViewController: UIViewController, MainTableViewProtocol {
         ])
     }
     
+    private func openCamera(){
+        let cameraController = UIImagePickerController()
+        cameraController.sourceType = .camera
+        cameraController.delegate = self
+        cameraController.cameraDevice = .front
+        self.present(cameraController, animated: true)
+    }
+    
+    private func errorCameraAlert() {
+        let alert = UIAlertController(title: "Aviso", message: "No se puede abrir la camara en un simulador, cambia a un dispositivo.", preferredStyle: .alert)
+        let okButton = UIAlertAction(title: "OK", style: .default) { _ in
+            alert.dismiss(animated: true)
+        }
+        alert.addAction(okButton)
+        self.present(alert, animated: true)
+    }
+    
     @objc
     func dismissKeyboard() {
         view.endEditing(true)
@@ -94,13 +111,11 @@ extension MainTableViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.row {
         case 1:
-            DispatchQueue.main.async {
-                let cameraController = UIImagePickerController()
-                cameraController.sourceType = .camera
-                cameraController.delegate = self
-                cameraController.cameraDevice = .front
-                self.present(cameraController, animated: true)
-            }
+            #if targetEnvironment(simulator)
+            errorCameraAlert()
+            #else
+            openCamera()
+            #endif
         case 2:
             let vc = ChartsTableViewControllerRouter.createModule()
             navigationController?.pushViewController(vc, animated: true)
